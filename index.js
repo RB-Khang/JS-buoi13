@@ -5,7 +5,7 @@ btn1.onclick = function () {
     var dayWork = +document.getElementById('work__day').value;
     var Luong = dayWork * sPDay;
     var result1 = document.getElementById('salary1');
-    result1.innerHTML = Luong.toLocaleString();
+    result1.innerHTML ='Tổng lương là: ' + Luong.toLocaleString();
 }
 
 
@@ -14,15 +14,15 @@ btn1.onclick = function () {
 var btn2 = document.getElementById("btn__bt2");
 btn2.onclick = function () {
     var num1 = +document.getElementById('so__1').value;
-    console.log(num1);
     var num2 = +document.getElementById('so__2').value;
     var num3 = +document.getElementById('so__3').value;
     var num4 = +document.getElementById('so__4').value;
     var num5 = +document.getElementById('so__5').value;
+    
     var trungBinh = (num1 + num2 + num3 + num4 + num5) / 5;
-    console.log(trungBinh)
+    
     var result2 = document.getElementById('average__number');
-    result2.innerHTML = trungBinh;
+    result2.innerHTML = 'Giá trị trung bình là: ' + trungBinh;
 }
 
 
@@ -34,7 +34,7 @@ btn3.onclick = function () {
     var usdMoney = +document.getElementById('usd__money').value;
     var vndMoney = usdMoney * usdRate;
     var result3 = document.getElementById('vnd__money');
-    result3.innerHTML = vndMoney.toLocaleString('vi-VI', { style: 'currency', currency: 'VND' });
+    result3.innerHTML = 'Số tiền quy đổi là: ' + vndMoney.toLocaleString('vi-VI', { style: 'currency', currency: 'VND' });
 }
 
 
@@ -45,8 +45,7 @@ btn4.onclick = function () {
     var chieuRong = +document.getElementById('chieu__rong').value;
     var chuVi = (chieuDai + chieuRong) * 2;
     var dienTich = chieuDai * chieuRong;
-    document.getElementById('chu__vi').innerHTML = chuVi;
-    document.getElementById('dien__tich').innerHTML = dienTich;
+    document.getElementById('ket__qua').innerHTML = 'Chu vi là: ' + chuVi + '  ; Diện tích là ' + dienTich;
 }
 
 
@@ -57,7 +56,7 @@ btn5.onclick = function () {
     var soHangDonVi = numBt5 % 10;
     var soHangChuc = (numBt5 - soHangDonVi) / 10;
     var tongKySo = soHangChuc + soHangDonVi;
-    document.getElementById('tong__ky__so').innerHTML = tongKySo;
+    document.getElementById('tong__ky__so').innerHTML = 'Tổng ký số là: ' + tongKySo;
 }
 
 
