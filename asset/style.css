@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    line-height: 20px;
+}
 
 h1{
     font-size: 22px;
@@ -10,4 +13,12 @@ h1{
 
 .baitap{
     margin: 0 35px 40px;
+}
+
+
+button{
+    padding:10px;
+    margin-top: 3px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
